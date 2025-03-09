@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Diagnosis Report</h1>
+        <div class="Patient-Details">
+            <h2>Patient Details</h2>
+            <p><strong>Name:</strong> <span>Deekshith</span></p>
+            <p><strong>Age:</strong> <span>18</span></p>
+            <p><strong>Test Date:</strong> <span>09-03-2025</span></p>
+        </div>        
+        <div class="Diagnosis-Summary">  
+            <h2>Diagnosis Summary</h2>
+             <!-- Display uploaded image -->
+            <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image">
+
+            <p><strong>Diagnosis:</strong> {{ diagnosis }}</p>
+            <p><strong>Confidence:</strong> {{ confidence }}%</p>
+            <p><strong>Elaboration:</strong> {{ elaboration }}</p>
+        </div>
+
+        <!-- Add this button inside the container, where appropriate -->
+        <a href="{{ url_for('download_report') }}" class="download-btn">Download Report (PDF)</a>
+
+        <!-- Button to upload another image -->
+        <a href="/" class="upload-another">Upload Another Image</a>
+        <footer>
+            <p>&copy; 2025 Image Classification for Medical Diagnoses</p>
+        </footer>
+          
+    </div>
+</body>
+</html>
