@@ -1,4 +1,3 @@
-
 # Image Classification for Medical Diagnosis
 
 Image classification for medical diagnosis is a critical application of machine learning and artificial intelligence in healthcare. It involves training algorithms to automatically categorize medical images, such as X-rays, MRIs, CT scans, and histopathology slides, into predefined classes (e.g., normal vs. abnormal, specific diseases, or tissue types). This technology has the potential to improve diagnostic accuracy, reduce human error, and speed up the diagnostic process.
