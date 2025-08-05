@@ -129,17 +129,3 @@ python app.py
 ```
 
 4. Go to `http://localhost:5000`, upload an image, and see the classification result.
-
-## 📁 Project Layout
-
-Detailed explanation of notebooks, scripts, folder structure, and weights directory.
-
-...
-
-```
-
----
-
-If you’d like, please share the current README content or repo layout—I’d be happy to help draft or polish specific sections (like Quick Start, API explanation, or features) with contextual details.
-::contentReference[oaicite:27]{index=27}
-```
